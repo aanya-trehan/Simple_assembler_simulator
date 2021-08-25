@@ -288,6 +288,6 @@ if len(error) == 0:
 elif len(error) != 0:
     for errors in sorted(error):
         print(error[errors])
-        # break
+        break
 
 # /Users/amolikabansal/Downloads/CO_M21_Assignment_submission-main_two

@@ -1,4 +1,5 @@
 import sys
+import matplotlib.pyplot as plt
 
 program_counter = 0
 programcounter = []
@@ -373,3 +374,14 @@ for line in lines:
         simulator(line)
 for i in memory:
     print(i)
+
+pooo=[]
+for i in range(0,len(programcounter)):
+    pooo.append(i)
+plt.scatter(programcounter, pooo)
+plt.xlabel('Cycle')
+plt.ylabel('Address')
+plt.title('Memory accesses vs Cycles')
+plt.show()
+
+
